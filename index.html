@@ -16,6 +16,9 @@
             flex-wrap: wrap;
             min-height: 100vh;
             background-color: #f4f4f4;
+            font-family: 'Helvetica', sans-serif; /* Global font */
+            font-size: 18px; /* Global font size */
+            color: #000000; /* Global font color */
         }
         .quadrant {
             width: 50%;
@@ -24,21 +27,33 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            color: #fff;
             font-size: 1.5rem;
             text-align: center;
+            color: #fff;
         }
         .top-left {
-            background-color: #ffffff;
+            background-color: #333;
+            font-family: 'Courier New', monospace; /* Specific font for top-left */
+            font-size: 20px;
+            color: #ffffff;
         }
         .top-right {
             background-color: #555;
+            font-family: 'Georgia', serif; /* Specific font for top-right */
+            font-size: 18px;
+            color: #ffffff;
         }
         .bottom-left {
             background-color: #777;
+            font-family: 'Arial', sans-serif; /* Specific font for bottom-left */
+            font-size: 22px;
+            color: #ffffff;
         }
         .bottom-right {
-            background-color: #ffffff;
+            background-color: #999;
+            font-family: 'Verdana', sans-serif; /* Specific font for bottom-right */
+            font-size: 16px;
+            color: #ffffff;
         }
         @media (max-width: 768px) {
             .quadrant {
