@@ -3,78 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Two-Column Layout</title>
-    <link href="https://fonts.googleapis.com/css2?family=Daytona:wght@400&display=swap" rel="stylesheet">
+    <title>Four Quadrants Layout</title>
     <style>
-        body {
-            font-family: 'Daytona', sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #fefefe, #fce8e8);
-            color: #333;
+            font-family: Arial, sans-serif;
         }
-        .container {
+        body {
             display: flex;
-            height: 100vh;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background-color: #f4f4f4;
         }
-        .left-column {
-            width: 30%;
+        .quadrant {
+            width: 50%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-right: 1px solid #ddd;
-        }
-        .right-column {
-            width: 70%;
-            padding: 20px;
+            color: #fff;
+            font-size: 1.5rem;
             text-align: center;
         }
-        h1, h2 {
-            font-weight: normal;
+        .top-left {
+            background-color: #ffffff;
         }
-        .navigation a {
-            display: block;
-            text-decoration: none;
-            color: #000;
-            margin-bottom: 10px;
+        .top-right {
+            background-color: #555;
         }
-        .navigation a:hover {
-            color: #ff5a5a;
+        .bottom-left {
+            background-color: #777;
+        }
+        .bottom-right {
+            background-color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .quadrant {
+                width: 100%;
+                height: 50vh;
+            }
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="left-column">
-        <div class="navigation">
-            <h2>Next Shows</h2>
-            <a href="#">Show 1</a>
-            <a href="#">Show 2</a>
-
-            <h2>Recent Shows</h2>
-            <a href="#">Recent Show 1</a>
-            <a href="#">Recent Show 2</a>
-
-            <h2>Music</h2>
-            <a href="#">Track 1</a>
-            <a href="#">Track 2</a>
-
-            <h2>Scoring</h2>
-            <a href="#">Score 1</a>
-
-            <h2>Mixes</h2>
-            <a href="#">Mix 1</a>
-
-            <h2>Interviews</h2>
-            <a href="#">Interview 1</a>
-        </div>
+    <div class="quadrant top-left">
+        <p>Quadrant 1</p>
     </div>
-
-    <div class="right-column">
-        <h1>Your Name</h1>
-        <p>Write a brief introduction here, similar to the one in the example, and include your bio information.</p>
+    <div class="quadrant top-right">
+        <p>Quadrant 2</p>
     </div>
-</div>
-
+    <div class="quadrant bottom-left">
+        <p>Quadrant 3</p>
+    </div>
+    <div class="quadrant bottom-right">
+        <p>Quadrant 4</p>
+    </div>
 </body>
 </html>
